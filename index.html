@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        #header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        #logo {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin-right: 20px;
+        }
+        
+        #tabs {
+            display: flex;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            margin: 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+        
+        .tab + .tab {
+            margin-left: -5px;
+        }
+        #content {
+            padding: 20px;
+            color: white;
+        }
+
+        #content-head {
+            display: flex;
+            padding: 20px;
+        }
+        
+        .popular {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .popular-text {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        .icon {
+            color: white;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        #filter-icon {
+            float: right;
+        }
+        .song-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .row-number {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 20px;
+            color: #ccc;
+        }
+        
+        .singer-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+            background-color: gray;
+        }
+        
+        .song-info {
+            flex: 1;
+        }
+        
+        .song-name {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .singer {
+            margin-bottom: 5px;
+        }
+        
+        .duration {
+            margin-bottom: 5px;
+        }
+
+        #bottom-section {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 50px;
+        }
+        
+        #bottom-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: gray;
+            margin-right: 20px;
+        }
+        
+        #bottom-details {
+            flex: 1;
+            color: white;
+        }
+        
+        #bottom-details > div {
+            margin-bottom: 5px;
+        }
+        
+        #protect-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+
+        #bottom-section {
+            background-color: blue;
+            padding: 20px;
+            color: white;
+        }
+        
+        #bottom-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: gray;
+            margin-right: 20px;
+        }
+        
+        #bottom-details {
+            flex: 1;
+        }
+        
+        #bottom-details > div {
+            margin-bottom: 5px;
+        }
+        
+        #control-icons {
+            display: flex;
+        }
+        
+        #control-icons .icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="logo"></div>
+        <nav id="tabs">
+            <a href="#" class="tab">Community</a>
+            <a href="#" class="tab">Protection</a>
+            <a href="#" class="tab">Distribution</a>
+        </nav>
+    </div>
+    <div id="content">
+        <div id="content-head">
+        <div>
+            <span class="popular-text">Most Popular</span>
+            <i class="fas fa-chevron-down icon"></i>
+        </div>
+        <div>
+            <span class="popular-text">No Filter</span>
+            <i class="fas fa-filter icon"></i>
+        </div>
+        </div>
+    <div class="song-row">
+        <div class="row-number">1</div>
+        <div class="singer-image"></div>
+        <div class="song-info">
+            <div class="song-name">Song Name</div>
+            <div class="singer">Singer Name</div>
+            <div class="duration">Duration</div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-eye icon"></i>
+            <i class="fas fa-file-alt icon"></i>
+        </div>
+    </div>
+    <div class="song-row">
+        <div class="row-number">2</div>
+        <div class="singer-image"></div>
+        <div class="song-info">
+            <div class="song-name">Song Name</div>
+            <div class="singer">Singer Name</div>
+            <div class="duration">Duration</div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-eye icon"></i>
+            <i class="fas fa-file-alt icon"></i>
+        </div>
+    </div>
+    <div class="song-row">
+        <div class="row-number">3</div>
+        <div class="singer-image"></div>
+        <div class="song-info">
+            <div class="song-name">Song Name</div>
+            <div class="singer">Singer Name</div>
+            <div class="duration">Duration</div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-eye icon"></i>
+            <i class="fas fa-file-alt icon"></i>
+        </div>
+    </div>
+    <div id="bottom-section">
+        <div id="bottom-image"></div>
+        <div id="bottom-details">
+            <div>Artist Name</div>
+            <div>Song Name</div>
+            <button id="protect-button">Protect</button>
+        </div>
+        <div class="bottom-content">
+            <div id="control-icons">
+                <i class="fas fa-download icon"></i>
+                <i class="fas fa-step-backward icon"></i>
+                <i class="fas fa-pause icon"></i>
+                <i class="fas fa-step-forward icon"></i>
+                <i class="fas fa-arrow-up icon"></i>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+</body>
+</html>
